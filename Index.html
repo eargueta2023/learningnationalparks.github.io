@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>National Parks</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+
+    <header>
+        <div class="crop">
+        <img src="https://fedtechmagazine.com/sites/fedtechmagazine.com/files/styles/cdw_hero/public/articles/FedTech-nationalparks%20.webp?itok=lmjNs3Mx">
+        </div>
+        <p><small> Source: Phil Goldstein, 2016. Accessed via https://fedtechmagazine.com/article/2016/02/push-wi-fi-national-parks-could-prove-be-infrastructure-challenge.</small></p>
+
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="page2.html">About Parks</a>
+    <a href="page3.html">Yosemite</a>
+    <a href="page4.html">Grand Canyon</a>
+    <a href="page5.html">Great Smoky Mountains</a>
+    <a href="page6.html">Stay in Contact</a>
+    </nav>
+
+    <h1 align="center">National Parks in the United States</h2>
+        <p> </p>
+        <h4 align="center">Welcome to an online introduction to some of the most well known National Parks in the United States! Here you can immerse yourself in learning about these parks and everything they have to offer.
+        </h4>
+        <p> </p>
+   
+    
+        <h4 align="center">My mission is simple: to kindle a flame of appreciation for the significance of these beautiful parks. These natural areas of our Earth serve as sanctuaries of biodiversity, ecosystems, and homes for both the flaura and fauna native to their region. 
+            These parks are also sanctuaries for explorers who are looking for comfort thorugh appreciating and learning from the environment.</h4>
+        
+    <h2 align="center" >Iconic Park images</h2>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://images.unsplash.com/photo-1523580756629-96e10267bfdd?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image1" style="width:100%" height="80%">
+  <div class="text">Source: Jeremy Bishop : "Just a day after a large winter storm!",2018 . Accessed via https://unsplash.com/photos/scenery-of-stones-on-body-of-water-CTL5ZsGITN8. Free to use under the Unsplash License.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://images.unsplash.com/photo-1607443287119-f01735e9e065?q=80&w=3102&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image2" style="width:100%">
+  <div class="text">Source: Roger Lipera: "Summer day at Dream Lake in Rocky Mountain National Park, near Estes Park, Colorado, USA.", 2020. Accessed via https://unsplash.com/photos/green-trees-near-lake-during-daytime-9ncGmtBeUzs. Free to use under the Unsplash License.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://images.unsplash.com/photo-1632789976210-b44c738c90a4?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image3" style="width:100%">
+  <div class="text">Source: David Banning: "Arches National Park, Utah, USA", 2021. Accessed via https://unsplash.com/photos/a-set-of-steps-leading-up-to-a-rock-arch-1IupW9jLbqA. Free to use under the Unsplash license.</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2500); // Change image every 2.5 seconds
+    }
+    </script>
+    
+    <h4 align="center">Although images can only capture a limited amount of the Earth's real life beauty, they certainly help! National Parks consist of diverse landscapes, historic backgrounds, and amazing life. Dive Deep with me into this site to discover the stories of these iconic parks. Welcome to Adventure! </h4>
+   
+    <footer> 
+    <p align=" center"> &copy; This Website is a Kennesaw State University Project</p>
+    </footer>
+</body>
+</html>
